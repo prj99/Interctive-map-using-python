@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c0768f80aaea4902801390d68d207a55 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c0768f80aaea4902801390d68d207a55" ></div>
+        
+</body>
+<script>    
+    
+            var map_c0768f80aaea4902801390d68d207a55 = L.map(
+                "map_c0768f80aaea4902801390d68d207a55",
+                {
+                    center: [21.068084974573743, 81.37345526251033],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a46bbec14e334047b7cd01d34a2ce07f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 8, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c0768f80aaea4902801390d68d207a55);
+        
+    
+            var feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c = L.featureGroup(
+                {}
+            ).addTo(map_c0768f80aaea4902801390d68d207a55);
+        
+    
+            var marker_a345fad7c9d1488fbfd89d870d4063f8 = L.marker(
+                [21.246342568626275, 81.3490979041893],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_12139459ae854712b3ad643a007377a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a345fad7c9d1488fbfd89d870d4063f8.setIcon(icon_12139459ae854712b3ad643a007377a4);
+        
+    
+        var popup_09c7f9caa5264d58992d52c31304f4d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d85f2efc23a84711a232a4339bf054f2 = $(`<div id="html_d85f2efc23a84711a232a4339bf054f2" style="width: 100.0%; height: 100.0%;">Maitri Bagh </div>`)[0];
+            popup_09c7f9caa5264d58992d52c31304f4d1.setContent(html_d85f2efc23a84711a232a4339bf054f2);
+        
+
+        marker_a345fad7c9d1488fbfd89d870d4063f8.bindPopup(popup_09c7f9caa5264d58992d52c31304f4d1)
+        ;
+
+        
+    
+    
+            marker_a345fad7c9d1488fbfd89d870d4063f8.bindTooltip(
+                `<div>
+                     Zoo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_516beb06267c4416a3477d5f9d83e611 = L.marker(
+                [22.62716291546509, 81.77756469313783],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_ed8ad6ba059b445581b8d023bd068c74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_516beb06267c4416a3477d5f9d83e611.setIcon(icon_ed8ad6ba059b445581b8d023bd068c74);
+        
+    
+        var popup_267e47248aad4f608528e31bdb69ad91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_215d395954e1435fb61584628612973d = $(`<div id="html_215d395954e1435fb61584628612973d" style="width: 100.0%; height: 100.0%;">Glacier Peak</div>`)[0];
+            popup_267e47248aad4f608528e31bdb69ad91.setContent(html_215d395954e1435fb61584628612973d);
+        
+
+        marker_516beb06267c4416a3477d5f9d83e611.bindPopup(popup_267e47248aad4f608528e31bdb69ad91)
+        ;
+
+        
+    
+    
+            marker_516beb06267c4416a3477d5f9d83e611.bindTooltip(
+                `<div>
+                     US-Washington
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e83c5a2b5127437bb290b224a5b79d68 = L.marker(
+                [22.19042523484747, 82.17307249832108],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_6566f774c3454ab3ba63c25c130947b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e83c5a2b5127437bb290b224a5b79d68.setIcon(icon_6566f774c3454ab3ba63c25c130947b5);
+        
+    
+        var popup_7a6658a9acad4b73844cea71fb595ef5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f14d92ddcc546dfae29de2f3205f327 = $(`<div id="html_8f14d92ddcc546dfae29de2f3205f327" style="width: 100.0%; height: 100.0%;">Rainier</div>`)[0];
+            popup_7a6658a9acad4b73844cea71fb595ef5.setContent(html_8f14d92ddcc546dfae29de2f3205f327);
+        
+
+        marker_e83c5a2b5127437bb290b224a5b79d68.bindPopup(popup_7a6658a9acad4b73844cea71fb595ef5)
+        ;
+
+        
+    
+    
+            marker_e83c5a2b5127437bb290b224a5b79d68.bindTooltip(
+                `<div>
+                     US-Washington
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bdb05f24252429a8a6a16c503ddf595 = L.marker(
+                [21.46121681789147, 82.24448362981249],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_eac2d2f03f004669b8eabfdf136e76d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0bdb05f24252429a8a6a16c503ddf595.setIcon(icon_eac2d2f03f004669b8eabfdf136e76d3);
+        
+    
+        var popup_7b0cd6fec6074128bf524de72c7e80a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efc7d3d080c14a9f82f65c4aaf38f4c5 = $(`<div id="html_efc7d3d080c14a9f82f65c4aaf38f4c5" style="width: 100.0%; height: 100.0%;">St. Helens</div>`)[0];
+            popup_7b0cd6fec6074128bf524de72c7e80a6.setContent(html_efc7d3d080c14a9f82f65c4aaf38f4c5);
+        
+
+        marker_0bdb05f24252429a8a6a16c503ddf595.bindPopup(popup_7b0cd6fec6074128bf524de72c7e80a6)
+        ;
+
+        
+    
+    
+            marker_0bdb05f24252429a8a6a16c503ddf595.bindTooltip(
+                `<div>
+                     US-Washington
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51e89a4bf01e483aba70fb16ce4de705 = L.marker(
+                [21.243331402032663, 81.27322109777072],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_291ca967292a483cb52de44c7939a0eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_51e89a4bf01e483aba70fb16ce4de705.setIcon(icon_291ca967292a483cb52de44c7939a0eb);
+        
+    
+        var popup_23036f1bbc834fb4aa5992caf4126a17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d5b6ffb621e4e6ab8cdb4f3ad3643c1 = $(`<div id="html_1d5b6ffb621e4e6ab8cdb4f3ad3643c1" style="width: 100.0%; height: 100.0%;">Adams</div>`)[0];
+            popup_23036f1bbc834fb4aa5992caf4126a17.setContent(html_1d5b6ffb621e4e6ab8cdb4f3ad3643c1);
+        
+
+        marker_51e89a4bf01e483aba70fb16ce4de705.bindPopup(popup_23036f1bbc834fb4aa5992caf4126a17)
+        ;
+
+        
+    
+    
+            marker_51e89a4bf01e483aba70fb16ce4de705.bindTooltip(
+                `<div>
+                     US-Washington
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b98c8447f9e4331b5a7ef6bb904ccdf = L.marker(
+                [21.210048272247978, 81.26498135182939],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_1b68ee40f4aa48898ffcf5a6a99dca28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8b98c8447f9e4331b5a7ef6bb904ccdf.setIcon(icon_1b68ee40f4aa48898ffcf5a6a99dca28);
+        
+    
+        var popup_0303ac9cbdf94065903bb20a4e834133 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c69e9cfc576d4a99b17dbfae12edcaf5 = $(`<div id="html_c69e9cfc576d4a99b17dbfae12edcaf5" style="width: 100.0%; height: 100.0%;">Wild life Sanctuary</div>`)[0];
+            popup_0303ac9cbdf94065903bb20a4e834133.setContent(html_c69e9cfc576d4a99b17dbfae12edcaf5);
+        
+
+        marker_8b98c8447f9e4331b5a7ef6bb904ccdf.bindPopup(popup_0303ac9cbdf94065903bb20a4e834133)
+        ;
+
+        
+    
+    
+            marker_8b98c8447f9e4331b5a7ef6bb904ccdf.bindTooltip(
+                `<div>
+                     WildLife
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e8f2af38dfa483d8748bd84ce1595b0 = L.marker(
+                [21.09683738667714, 81.78177896318648],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_b97163b09f8143dd83d5b02b74b27bc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2e8f2af38dfa483d8748bd84ce1595b0.setIcon(icon_b97163b09f8143dd83d5b02b74b27bc3);
+        
+    
+        var popup_8d2950c4eb304897ab8aa49e8cf5bbf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b283c31f156474ba85e48c9973b5b62 = $(`<div id="html_9b283c31f156474ba85e48c9973b5b62" style="width: 100.0%; height: 100.0%;">Nandanvan Jungle Safari</div>`)[0];
+            popup_8d2950c4eb304897ab8aa49e8cf5bbf1.setContent(html_9b283c31f156474ba85e48c9973b5b62);
+        
+
+        marker_2e8f2af38dfa483d8748bd84ce1595b0.bindPopup(popup_8d2950c4eb304897ab8aa49e8cf5bbf1)
+        ;
+
+        
+    
+    
+            marker_2e8f2af38dfa483d8748bd84ce1595b0.bindTooltip(
+                `<div>
+                     WildLife
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f62ce5202c944150a67f3e15374a68c9 = L.marker(
+                [21.10757013419152, 81.77220148454396],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_c32b81d18c8b4fc687e08d768f21965f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f62ce5202c944150a67f3e15374a68c9.setIcon(icon_c32b81d18c8b4fc687e08d768f21965f);
+        
+    
+        var popup_6c99668ad9dc46349aee28c4ba8b9253 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6214f90c1c2042ba81e964b7c4f3c035 = $(`<div id="html_6214f90c1c2042ba81e964b7c4f3c035" style="width: 100.0%; height: 100.0%;">Tiger Safari</div>`)[0];
+            popup_6c99668ad9dc46349aee28c4ba8b9253.setContent(html_6214f90c1c2042ba81e964b7c4f3c035);
+        
+
+        marker_f62ce5202c944150a67f3e15374a68c9.bindPopup(popup_6c99668ad9dc46349aee28c4ba8b9253)
+        ;
+
+        
+    
+    
+            marker_f62ce5202c944150a67f3e15374a68c9.bindTooltip(
+                `<div>
+                     WildLife
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f4b629e4c4d4abcb7a36b6a1802fa76 = L.marker(
+                [20.458887159832443, 81.97487034591772],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_c4ef0b5c28174e529d05215615f35f88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f4b629e4c4d4abcb7a36b6a1802fa76.setIcon(icon_c4ef0b5c28174e529d05215615f35f88);
+        
+    
+        var popup_5eb165d12b364067a9b37f415d9d7b1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e277b3a1ca454154a6c6339ba7f51776 = $(`<div id="html_e277b3a1ca454154a6c6339ba7f51776" style="width: 100.0%; height: 100.0%;">Sitanadi Wildlife Sanctuary</div>`)[0];
+            popup_5eb165d12b364067a9b37f415d9d7b1c.setContent(html_e277b3a1ca454154a6c6339ba7f51776);
+        
+
+        marker_7f4b629e4c4d4abcb7a36b6a1802fa76.bindPopup(popup_5eb165d12b364067a9b37f415d9d7b1c)
+        ;
+
+        
+    
+    
+            marker_7f4b629e4c4d4abcb7a36b6a1802fa76.bindTooltip(
+                `<div>
+                     Biodiversity Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c7cd0f80bc64823ad661966d9cf3b32 = L.marker(
+                [21.483179047764107, 82.53041396179637],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_b6785eb68e0d4616a90e5bd66e70ac6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7c7cd0f80bc64823ad661966d9cf3b32.setIcon(icon_b6785eb68e0d4616a90e5bd66e70ac6b);
+        
+    
+        var popup_9e29ed1576d84149834daed45d08d652 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a78388710af4985a81c6c8c85a3a0a0 = $(`<div id="html_2a78388710af4985a81c6c8c85a3a0a0" style="width: 100.0%; height: 100.0%;">Barnawara Forest</div>`)[0];
+            popup_9e29ed1576d84149834daed45d08d652.setContent(html_2a78388710af4985a81c6c8c85a3a0a0);
+        
+
+        marker_7c7cd0f80bc64823ad661966d9cf3b32.bindPopup(popup_9e29ed1576d84149834daed45d08d652)
+        ;
+
+        
+    
+    
+            marker_7c7cd0f80bc64823ad661966d9cf3b32.bindTooltip(
+                `<div>
+                     Forest
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_427894e6cbbe45d3abc1533313596818 = L.marker(
+                [22.01604966617204, 81.09949373003906],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_1cacc7ecdbad4320935f1bd9765f38c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_427894e6cbbe45d3abc1533313596818.setIcon(icon_1cacc7ecdbad4320935f1bd9765f38c2);
+        
+    
+        var popup_6e081be757464512a82bddb50638aa01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87e8f85c01d0432593217192e6edfd4d = $(`<div id="html_87e8f85c01d0432593217192e6edfd4d" style="width: 100.0%; height: 100.0%;"> Bhoremdev WildLife</div>`)[0];
+            popup_6e081be757464512a82bddb50638aa01.setContent(html_87e8f85c01d0432593217192e6edfd4d);
+        
+
+        marker_427894e6cbbe45d3abc1533313596818.bindPopup(popup_6e081be757464512a82bddb50638aa01)
+        ;
+
+        
+    
+    
+            marker_427894e6cbbe45d3abc1533313596818.bindTooltip(
+                `<div>
+                     WildLife
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c7f4ea4ecdc42c3ba37640edcbf7f11 = L.marker(
+                [21.455518218913955, 82.51746790042262],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_67f17b4d5cb14ab2bb002f0135a34891 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c7f4ea4ecdc42c3ba37640edcbf7f11.setIcon(icon_67f17b4d5cb14ab2bb002f0135a34891);
+        
+    
+        var popup_97edcaa7d638433088132329de780175 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_648c1e87467c47aeaed1a97e53e06049 = $(`<div id="html_648c1e87467c47aeaed1a97e53e06049" style="width: 100.0%; height: 100.0%;">Barnawapare Forest</div>`)[0];
+            popup_97edcaa7d638433088132329de780175.setContent(html_648c1e87467c47aeaed1a97e53e06049);
+        
+
+        marker_8c7f4ea4ecdc42c3ba37640edcbf7f11.bindPopup(popup_97edcaa7d638433088132329de780175)
+        ;
+
+        
+    
+    
+            marker_8c7f4ea4ecdc42c3ba37640edcbf7f11.bindTooltip(
+                `<div>
+                     Forest
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7bb0dca780ed4abdb395e8585e6f067e = L.marker(
+                [21.207096860518124, 81.15509347767507],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_46c82b3530a246b4b902d52c0e51ec00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7bb0dca780ed4abdb395e8585e6f067e.setIcon(icon_46c82b3530a246b4b902d52c0e51ec00);
+        
+    
+        var popup_5bafcb6561804feea3a8c12ed30f9ef5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54aee2027c1240a5a0b85183f33ac2aa = $(`<div id="html_54aee2027c1240a5a0b85183f33ac2aa" style="width: 100.0%; height: 100.0%;">Mangata WildLife</div>`)[0];
+            popup_5bafcb6561804feea3a8c12ed30f9ef5.setContent(html_54aee2027c1240a5a0b85183f33ac2aa);
+        
+
+        marker_7bb0dca780ed4abdb395e8585e6f067e.bindPopup(popup_5bafcb6561804feea3a8c12ed30f9ef5)
+        ;
+
+        
+    
+    
+            marker_7bb0dca780ed4abdb395e8585e6f067e.bindTooltip(
+                `<div>
+                     Animal Resarch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ca0dadf8c614da885b1971c991f45b7 = L.marker(
+                [20.123629463164505, 82.37019086866528],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_f73f2090071447bc96204a112fe52845 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5ca0dadf8c614da885b1971c991f45b7.setIcon(icon_f73f2090071447bc96204a112fe52845);
+        
+    
+        var popup_9cef0aefa1094ae2923cb0d67b3e04e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45ddbc56cad1446aa334ffb3c7eb8d1f = $(`<div id="html_45ddbc56cad1446aa334ffb3c7eb8d1f" style="width: 100.0%; height: 100.0%;">Udanti WildLIfe</div>`)[0];
+            popup_9cef0aefa1094ae2923cb0d67b3e04e2.setContent(html_45ddbc56cad1446aa334ffb3c7eb8d1f);
+        
+
+        marker_5ca0dadf8c614da885b1971c991f45b7.bindPopup(popup_9cef0aefa1094ae2923cb0d67b3e04e2)
+        ;
+
+        
+    
+    
+            marker_5ca0dadf8c614da885b1971c991f45b7.bindTooltip(
+                `<div>
+                     WildLife
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3aade97861c74003b64ed0d1d93fddf6 = L.marker(
+                [21.909067962922485, 82.28347672536758],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_5f9c898775614336844ce1fcada4cd10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3aade97861c74003b64ed0d1d93fddf6.setIcon(icon_5f9c898775614336844ce1fcada4cd10);
+        
+    
+        var popup_b5510e18f19047c19569b2af465cd72e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d6307f190d643258df0112de5e3e601 = $(`<div id="html_9d6307f190d643258df0112de5e3e601" style="width: 100.0%; height: 100.0%;">Ancient Temple</div>`)[0];
+            popup_b5510e18f19047c19569b2af465cd72e.setContent(html_9d6307f190d643258df0112de5e3e601);
+        
+
+        marker_3aade97861c74003b64ed0d1d93fddf6.bindPopup(popup_b5510e18f19047c19569b2af465cd72e)
+        ;
+
+        
+    
+    
+            marker_3aade97861c74003b64ed0d1d93fddf6.bindTooltip(
+                `<div>
+                     Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39d2b4455d1544a29300fdf0e1295f13 = L.marker(
+                [21.91191760329357, 82.27085528840364],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_739d18a6042641c099c12659d70e0094 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_39d2b4455d1544a29300fdf0e1295f13.setIcon(icon_739d18a6042641c099c12659d70e0094);
+        
+    
+        var popup_f88378f857b94bdd8edc5b7430d10708 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4655494b17f441ac9cadf87cee333ca2 = $(`<div id="html_4655494b17f441ac9cadf87cee333ca2" style="width: 100.0%; height: 100.0%;">Malhar Fort</div>`)[0];
+            popup_f88378f857b94bdd8edc5b7430d10708.setContent(html_4655494b17f441ac9cadf87cee333ca2);
+        
+
+        marker_39d2b4455d1544a29300fdf0e1295f13.bindPopup(popup_f88378f857b94bdd8edc5b7430d10708)
+        ;
+
+        
+    
+    
+            marker_39d2b4455d1544a29300fdf0e1295f13.bindTooltip(
+                `<div>
+                     Historic Place
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da368dec24404a13a0faf76d742a6cfa = L.marker(
+                [22.136417313296437, 82.56621213437272],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_4a9fa5047633441f95d243c4e35719d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_da368dec24404a13a0faf76d742a6cfa.setIcon(icon_4a9fa5047633441f95d243c4e35719d6);
+        
+    
+        var popup_2c191084d55449be9008c32b98834435 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_faa7f411e4514724913f5883a572d0fa = $(`<div id="html_faa7f411e4514724913f5883a572d0fa" style="width: 100.0%; height: 100.0%;">GURU GHASIDAS CHOUK PONCH</div>`)[0];
+            popup_2c191084d55449be9008c32b98834435.setContent(html_faa7f411e4514724913f5883a572d0fa);
+        
+
+        marker_da368dec24404a13a0faf76d742a6cfa.bindPopup(popup_2c191084d55449be9008c32b98834435)
+        ;
+
+        
+    
+    
+            marker_da368dec24404a13a0faf76d742a6cfa.bindTooltip(
+                `<div>
+                     Roming Place
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1d2b0049b1e46398322c81219af9436 = L.marker(
+                [21.922447381370493, 82.02474950688563],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_b4bee35e9585433c9e70c40f48080ed9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1d2b0049b1e46398322c81219af9436.setIcon(icon_b4bee35e9585433c9e70c40f48080ed9);
+        
+    
+        var popup_cca2844fc97545eaba1f0249d1ca02ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a4282ef462742e7b3ffe4769667cd96 = $(`<div id="html_7a4282ef462742e7b3ffe4769667cd96" style="width: 100.0%; height: 100.0%;">Rudra Shiv Mandir</div>`)[0];
+            popup_cca2844fc97545eaba1f0249d1ca02ba.setContent(html_7a4282ef462742e7b3ffe4769667cd96);
+        
+
+        marker_e1d2b0049b1e46398322c81219af9436.bindPopup(popup_cca2844fc97545eaba1f0249d1ca02ba)
+        ;
+
+        
+    
+    
+            marker_e1d2b0049b1e46398322c81219af9436.bindTooltip(
+                `<div>
+                     Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8696f76a3a5d4012b533ccf45450d02b = L.marker(
+                [21.90626462609343, 82.27697875238303],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_6e1f5b789f5c4c23a79440a95869f1d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8696f76a3a5d4012b533ccf45450d02b.setIcon(icon_6e1f5b789f5c4c23a79440a95869f1d7);
+        
+    
+        var popup_6c785df2eb154c9fbea523c31b69da2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c36d8908ab9545acbe800a2ce083292b = $(`<div id="html_c36d8908ab9545acbe800a2ce083292b" style="width: 100.0%; height: 100.0%;">Bhim Kichak Temple</div>`)[0];
+            popup_6c785df2eb154c9fbea523c31b69da2a.setContent(html_c36d8908ab9545acbe800a2ce083292b);
+        
+
+        marker_8696f76a3a5d4012b533ccf45450d02b.bindPopup(popup_6c785df2eb154c9fbea523c31b69da2a)
+        ;
+
+        
+    
+    
+            marker_8696f76a3a5d4012b533ccf45450d02b.bindTooltip(
+                `<div>
+                     Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f4bf63a9115432592dfa817dbba8725 = L.marker(
+                [21.353941811054877, 82.18902300688562],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_e2b4e485dd904e209c17e597ac0b96ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5f4bf63a9115432592dfa817dbba8725.setIcon(icon_e2b4e485dd904e209c17e597ac0b96ac);
+        
+    
+        var popup_3906e5c834764996adfd1d811b4458dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5608d54650d4cf989fe0715df8d1c67 = $(`<div id="html_c5608d54650d4cf989fe0715df8d1c67" style="width: 100.0%; height: 100.0%;">Sirpur Historical Place with Laxman Temple</div>`)[0];
+            popup_3906e5c834764996adfd1d811b4458dc.setContent(html_c5608d54650d4cf989fe0715df8d1c67);
+        
+
+        marker_5f4bf63a9115432592dfa817dbba8725.bindPopup(popup_3906e5c834764996adfd1d811b4458dc)
+        ;
+
+        
+    
+    
+            marker_5f4bf63a9115432592dfa817dbba8725.bindTooltip(
+                `<div>
+                     temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00f2c8b978d74303ad51e4e88a7bcda1 = L.marker(
+                [21.398789753648803, 81.27915396291999],
+                {}
+            ).addTo(feature_group_67b6dd3fb23b4af0b92d9dc1a3ab973c);
+        
+    
+            var icon_da442483cdee40649223ad615fc8f043 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_00f2c8b978d74303ad51e4e88a7bcda1.setIcon(icon_da442483cdee40649223ad615fc8f043);
+        
+    
+        var popup_94d7783f6cac4e268ad07ad2d1fb18d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55a8457ea1714d43a7b905b3694a7e9b = $(`<div id="html_55a8457ea1714d43a7b905b3694a7e9b" style="width: 100.0%; height: 100.0%;">BSP</div>`)[0];
+            popup_94d7783f6cac4e268ad07ad2d1fb18d9.setContent(html_55a8457ea1714d43a7b905b3694a7e9b);
+        
+
+        marker_00f2c8b978d74303ad51e4e88a7bcda1.bindPopup(popup_94d7783f6cac4e268ad07ad2d1fb18d9)
+        ;
+
+        
+    
+    
+            marker_00f2c8b978d74303ad51e4e88a7bcda1.bindTooltip(
+                `<div>
+                     Steel Plant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
